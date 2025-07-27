@@ -116,3 +116,11 @@ deploy:
   type: git
   repo: https://github.com/ReyChiaro/ReyChiaro.github.io.git
   branch: main
+
+pandoc:
+  args:
+    - '-f'
+    - 'markdown'
+    - '-t'
+    - 'html'
+    - '--mathjax'
