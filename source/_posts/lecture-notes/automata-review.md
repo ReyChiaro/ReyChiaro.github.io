@@ -3,6 +3,7 @@ title: Lecture Notes | Formal Language and Automata
 date: 2025-05-28 10:46:43
 tags: lecture-notes
 mathjax: true
+published: false
 ---
 
 ## 形式语言与自动机大纲

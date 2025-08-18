@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2025-05-22 11:23:00
+mathjax: true
 ---
 
 I am glad to see you visit my personal site 😃  
@@ -9,19 +10,17 @@ Feel free to reach out if you'd like to discuss research ideas, interesting pape
 
 ## Hi👋 There!
 
-I'm a research enthusiast with a strong interest in **Multimodal Models**, **Contrastive Learning** and **Computer Vision**. I enjoy transforming ideas into experiments and, whenever possible, into working systems. Below is a bit more about my background:
+I'm a research enthusiast with a strong interest in **Generative Models (especially Diffusion, Flow-matching)**, **Multimodal Language Models**, and **Contrastive Learning**. I enjoy transforming ideas into experiments and, whenever possible, into working systems. Below is a bit more about my background:
 
 ### 🎓 Education
 
-I am currently study in [Southeast University](https://www.seu.edu.cn/main.htm) for my master degree.
+- **Shanghai Jiao Tong University (SJTU)**, Shanghai, China \
+  *Research assistent* in <u>Artificial Intelligence</u>, [07/2025 - now] \
+  I was honored to study at [SAI](https://soai.sjtu.edu.cn/), supervised by [Prof. Liu](https://huage001.github.io/). My current research interests mainly focus on diffusion models for style transfer and multiple image generation, glad to contact me for reseaerch discussion.
 
-- **Southeast University (SEU)**, Nanjing, China  
-  *Master* in <u>Computer Science</u>, [09/2024 – 06/2027]
-  I was honored to study at [PALM Lab](https://palm.seu.edu.cn/intro.html), Department of Computer Science. My research interests mainly focus on multimodal modals, contrastive learning and computer vision.
-
-- **Southeast University (SEU)**, Nanjing, China  
-  *Bachelor* in <u>Computer Science</u>, [09/2020 – 06/2024]
-  I was honored to study at [Chien-Shiung Wu College](https://wjx.seu.edu.cn/), which is the honor college of SEU. I ranked $7$-th among students who major in CS and I was fortunate to receive a recommendation for postgraduate study without needing to take the national entrance exam.
+- **Southeast University (SEU)**, Nanjing, China \
+  *Bachelor* in <u>Computer Science</u>, [09/2020 – 06/2024] \
+  I was honored to study at [Chien-Shiung Wu College](https://wjx.seu.edu.cn/), which is the honor college of SEU. I ranked $7$-th among students who major in CS and I was fortunate to receive a recommendation for postgraduate study.
 
 <!-- ### 🧑‍💻 Internships
 
@@ -45,7 +44,7 @@ I am currently study in [Southeast University](https://www.seu.edu.cn/main.htm) 
 
 ### 🌐 Let's Connect!
 
-Feel free to reach out or follow me on: <a class="icon" href="https://github.com/ReyChiaro" target="_blank" style="text-decoration: none;"><img src="../images/icons/GitHub.svg" alt="Github" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a>  <a class="icon" href="mailto:andrewrey.cc@gmail.com" target="_blank" style="text-decoration: none;"><img src="../images/icons/gmail.svg" alt="Gmail" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a> <a class="icon" href="https://www.xiaohongshu.com/user/profile/5f3a3c5d0000000001006818?xsec_token=YBuibxCh23WMjdhH5edyMFa2xnmItLn9lC6mydQnVAaBE%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=5f3a3c5d0000000001006818&apptime=1747903648&share_id=9b0e9592d9a744c49e5c184ed3ca201c&share_channel=copy_link" target="_blank" style="text-decoration: none;"> <img src="../images/icons/xiaohongshu.svg" alt="xiaohongshu" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a> <a class="icon" href="https://space.bilibili.com/631454496" target="_blank" style="text-decoration: none;"><img src="../images/icons/bilibili.svg" alt="bilibili" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a> <a class="icon" href="https://www.zhihu.com/people/andrew-67-78-86" target="_blank" style="text-decoration: none;"><img src="../images/icons/zhihu.svg" alt="Zhihu" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a>
+Feel free to reach out or follow me on: <a class="icon" href="https://github.com/ReyChiaro" target="_blank" style="text-decoration: none;"><img src="../images/icons/GitHub.svg" alt="Github" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a>  <a class="icon" href="mailto:chiaroair@gmail.com" target="_blank" style="text-decoration: none;"><img src="../images/icons/gmail.svg" alt="Gmail" width="20" style="display: inline; vertical-align: middle; margin-right: 4px;"></a>
 
 Thanks again for dropping by — I hope you find something inspiring or useful here!
 <!-- - 💼 [LinkedIn](https://www.linkedin.com/in/your-profile) -->
