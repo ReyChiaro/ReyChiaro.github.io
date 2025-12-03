@@ -10,9 +10,9 @@ Feel free to reach out if you'd like to discuss research ideas, interesting pape
 
 ## Hi👋 There!
 
-I'm a research enthusiast with a strong interest in **Generative Models (especially Diffusion, Flow-matching)**, **Multimodal Language Models**, and **Contrastive Learning**. I enjoy transforming ideas into experiments and, whenever possible, into working systems. Below is a bit more about my background:
+I'm a research enthusiast with a strong interest in **Generative Models (especially Diffusion, Flow-matching)**, **Multimodal Language Models**, **Agent**. I enjoy transforming ideas into experiments and, whenever possible, into working systems. Below is a bit more about my background:
 
-### 🎓 Education
+<!-- ### 🎓 Education
 
 - **Shanghai Jiao Tong University (SJTU)**, Shanghai, China \
   *Research assistent* in <u>Artificial Intelligence</u>, [07/2025 - now] \
@@ -20,7 +20,7 @@ I'm a research enthusiast with a strong interest in **Generative Models (especia
 
 - **Southeast University (SEU)**, Nanjing, China \
   *Bachelor* in <u>Computer Science</u>, [09/2020 – 06/2024] \
-  I was honored to study at [Chien-Shiung Wu College](https://wjx.seu.edu.cn/), which is the honor college of SEU. I ranked $7$-th among students who major in CS and I was fortunate to receive a recommendation for postgraduate study.
+  I was honored to study at [Chien-Shiung Wu College](https://wjx.seu.edu.cn/), which is the honor college of SEU. I ranked $7$-th among students who major in CS and I was fortunate to receive a recommendation for postgraduate study. -->
 
 <!-- ### 🧑‍💻 Internships
 
