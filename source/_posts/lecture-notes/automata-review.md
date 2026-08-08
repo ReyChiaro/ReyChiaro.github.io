@@ -1,6 +1,8 @@
 ---
 title: Lecture Notes | Formal Language and Automata
 date: 2025-05-28 10:46:43
+categories:
+  - Lecture Notes
 tags: lecture-notes
 mathjax: true
 published: false

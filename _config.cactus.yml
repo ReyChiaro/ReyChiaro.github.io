@@ -1,0 +1,107 @@
+# Local configuration for the customized Cactus theme.
+projects_url: https://github.com/ReyChiaro
+direction: ltr
+
+# Kept as a fallback for theme helpers. Visible navigation is sourced from
+# source/_data/navigation.yml.
+nav:
+  home: /
+  about: /about/
+  articles: /archives/
+  categories: /categories/
+  github: https://github.com/ReyChiaro
+
+social_links:
+  - label: GitHub
+    icon: github
+    image: /images/icons/GitHub.svg
+    link: https://github.com/ReyChiaro
+  - label: Gmail
+    icon: mail
+    image: /images/icons/gmail.svg
+    link: mailto:chiaroair@gmail.com
+
+tags_overview:
+  min_font: 10
+  max_font: 20
+  amount: 100
+  orderby: name
+  order: 1
+
+posts_overview:
+  show_all_posts: false
+  post_count: 5
+  sort_updated: false
+
+archive:
+  sort_updated: false
+
+post:
+  show_updated: true
+
+copyright:
+  start_year: 2025
+
+logo:
+  enabled: true
+  width: 50
+  height: 50
+  url: https://avatars.githubusercontent.com/u/121890657?v=4
+  gravatar: false
+  grayout: true
+
+favicon:
+  desktop:
+    url: https://avatars.githubusercontent.com/u/121890657?v=4
+    gravatar: false
+  android:
+    url: https://avatars.githubusercontent.com/u/121890657?v=4
+    gravatar: false
+  apple:
+    url: https://avatars.githubusercontent.com/u/121890657?v=4
+    gravatar: false
+
+colorscheme: classic
+highlight: github
+page_width: 48
+rss: /atom.xml
+
+open_graph:
+  fb_app_id:
+  fb_admins:
+  twitter_id:
+  google_plus:
+
+# Math is rendered once at build time by hexo-filter-mathjax.
+mathjax:
+  enabled: false
+
+disqus:
+  enabled: false
+
+utterances:
+  enabled: false
+
+google_analytics:
+  enabled: false
+
+baidu_analytics:
+  enabled: false
+
+cloudflare_analytics:
+  enabled: false
+
+umami_analytics:
+  enabled: false
+
+gravatar:
+  email:
+  hash:
+
+cdn:
+  enable: true
+  jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+  clipboard: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js
+  font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+  justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
+  justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js

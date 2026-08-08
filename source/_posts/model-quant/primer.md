@@ -1,6 +1,8 @@
 ---
 title: Model Quantization | Primer
 date: 2026-03-17 13:48:49
+categories:
+  - Model Quantization
 tags: model-quant
 mathjax: true
 ---

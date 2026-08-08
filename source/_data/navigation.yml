@@ -1,0 +1,15 @@
+- key: home
+  label: Home
+  url: /
+- key: about
+  label: About
+  url: /about/
+- key: articles
+  label: Blogs
+  url: /archives/
+- key: categories
+  label: Categories
+  url: /categories/
+- key: github
+  label: GitHub
+  url: https://github.com/ReyChiaro

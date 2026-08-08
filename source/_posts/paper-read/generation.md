@@ -1,6 +1,8 @@
 ---
 title: Paper Read | Generation
 date: 2025-07-04 10:43:38
+categories:
+  - Paper Reading
 tags: paper-read
 mathjax: true
 ---

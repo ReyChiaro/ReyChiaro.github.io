@@ -5,15 +5,19 @@
 # Site
 title: Chiaro
 subtitle: ''
-description: ''
+description: Notes on generative models, multimodal learning, and research practice.
 keywords:
+  - generative models
+  - diffusion models
+  - multimodal learning
+  - research notes
 author: Chiaro
 language: en
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://ReyChiaro.github.io
+url: https://reychiaro.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -80,7 +84,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -90,6 +94,7 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
+  - .nojekyll
 exclude:
 ignore:
 
@@ -124,3 +129,13 @@ pandoc:
     - '-t'
     - 'html'
     - '--mathjax'
+
+# Feed and sitemap
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+
+sitemap:
+  path: sitemap.xml

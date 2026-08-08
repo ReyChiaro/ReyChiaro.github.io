@@ -1,7 +1,14 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 20
+  - package-ecosystem: npm
+    directory: "/"
+    target-branch: blogs
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+  - package-ecosystem: github-actions
+    directory: "/"
+    target-branch: blogs
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
