@@ -9,4 +9,4 @@ This directory is a project-local customization of
 
 Local changes keep the existing classic visual style while adding data-driven
 navigation, local social icons, reusable note/project layouts, build-time-only
-MathJax, and a compressed webfont.
+MathJax, a compressed webfont, and a persistent light/dark color switcher.

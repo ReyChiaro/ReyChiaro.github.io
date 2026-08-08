@@ -71,6 +71,10 @@ toc: true
 - 主题选项：编辑 `_config.cactus.yml`；
 - 站点选项：编辑 `_config.yml`。
 
+亮暗模式默认跟随系统，并在用户手动切换后记住选择。可以通过
+`_config.cactus.yml` 中的 `color_mode.default` 改为固定的 `light` 或 `dark`；
+暗色调色板位于 `themes/cactus/source/css/_colors/chiaro-dark.styl`。
+
 ## 发布
 
 推送到 `blogs` 后，`.github/workflows/deploy.yml` 会安装依赖和 Pandoc、构建

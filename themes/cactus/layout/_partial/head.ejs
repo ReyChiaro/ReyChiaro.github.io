@@ -4,6 +4,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta id="theme-color" name="theme-color" content="#fafafa">
+    <% const colorMode = theme.color_mode || {}; %>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var storageKey = <%- JSON.stringify(colorMode.storage_key || 'chiaro-color-theme') %>;
+        var configuredMode = <%- JSON.stringify(colorMode.default || 'auto') %>;
+        var selectedMode = configuredMode;
+
+        try {
+          selectedMode = localStorage.getItem(storageKey) || configuredMode;
+        } catch (error) {
+          selectedMode = configuredMode;
+        }
+
+        if (selectedMode !== 'light' && selectedMode !== 'dark') {
+          selectedMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+        }
+
+        root.dataset.colorTheme = selectedMode;
+        root.style.colorScheme = selectedMode;
+        window.chiaroColorTheme = {
+          mode: selectedMode,
+          storageKey: storageKey
+        };
+      }());
+    </script>
     <%- open_graph({
         image:          thumbnail(page),
         fb_app_id:      theme.open_graph.fb_app_id,
@@ -54,6 +83,11 @@
     <%- partial('./umami_analytics.ejs') %>
     <!-- styles -->
     <%- css('css/style') %>
+    <link id="theme-dark-stylesheet" rel="stylesheet" href="<%- url_for('/css/dark-mode.css') %>" disabled>
+    <script>
+      document.getElementById('theme-dark-stylesheet').disabled =
+        document.documentElement.dataset.colorTheme !== 'dark';
+    </script>
     <!-- persian styles -->
     <% if (theme.direction && theme.direction === 'rtl') { %>
       <%- css('css/rtl') %>

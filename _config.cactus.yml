@@ -66,6 +66,10 @@ highlight: github
 page_width: 48
 rss: /atom.xml
 
+color_mode:
+  default: auto
+  storage_key: chiaro-color-theme
+
 open_graph:
   fb_app_id:
   fb_admins:
