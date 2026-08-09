@@ -1,0 +1,322 @@
+@import "_variables"
+@import "_colors/" + $colors
+@import "_util"
+@import "_mixins"
+@import "_extend"
+@import "_fonts"
+
+global-reset()
+
+*, *:before, *:after
+  box-sizing: border-box
+
+/* Scroll bar */
+/* For Firefox */
+*
+  scrollbar-color: $color-scrollbar transparent
+
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar
+  width: 8px
+  height: 6px
+
+*::-webkit-scrollbar-track
+  background: transparent
+
+*::-webkit-scrollbar-thumb
+  background-color: $color-scrollbar
+  border-radius: 6px
+
+*::-webkit-scrollbar-thumb:hover
+  background-color: darken($color-scrollbar, 20%)
+
+*::-webkit-scrollbar-thumb:active
+  background-color: darken($color-scrollbar, 30%)
+
+html
+  margin: 0
+  padding: 0
+  height: 100%
+  background: $color-background
+  color-scheme: light
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+body
+  position: relative
+  margin: 0
+  min-height: 100%
+  background-color: $color-background
+  color: $color-text
+  font-weight: 400
+  font-size: $font-size
+  font-family: $font-family-body
+  line-height: $line-height
+  text-rendering: geometricPrecision
+
+  antialias()
+
+  @extend $base-style
+
+body:before,
+body:after
+  position: fixed
+  z-index: 0
+  width: 48rem
+  height: 125vh
+  padding: 3.75rem
+  border-radius: 50%
+  background: repeating-radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) .58rem, rgba(255, 255, 255, .34) .64rem, rgba(197, 153, 220, .08) .72rem), radial-gradient(ellipse at center, rgba(235, 221, 247, .14) 82%, rgba(178, 132, 211, .32) 85%, rgba(247, 221, 237, .4) 87.5%, rgba(202, 155, 220, .25) 90%, rgba(251, 225, 239, .44) 92.5%, rgba(174, 125, 207, .32) 95%, rgba(239, 217, 246, .4) 97.5%, rgba(216, 154, 197, .28) 100%)
+  content: ""
+  filter: drop-shadow(0 0 24px rgba(173, 126, 214, .08))
+  opacity: .72
+  pointer-events: none
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)
+  -webkit-mask-composite: xor
+  mask-composite: exclude
+
+body:before
+  top: -22vh
+  left: -41.5rem
+  transform: rotate(-12deg)
+  animation: chiaro-flow-left 18s ease-in-out infinite alternate
+
+body:after
+  right: -42rem
+  bottom: -23vh
+  transform: rotate(17deg)
+  animation: chiaro-flow-right 22s ease-in-out infinite alternate
+
+@keyframes chiaro-flow-left
+  from
+    transform: translate3d(0, -1.5vh, 0) rotate(-12deg)
+  to
+    transform: translate3d(1.4rem, 2vh, 0) rotate(-8deg)
+
+@keyframes chiaro-flow-right
+  from
+    transform: translate3d(0, 1vh, 0) rotate(17deg)
+  to
+    transform: translate3d(-1.3rem, -2vh, 0) rotate(12deg)
+
+@media (max-width: 680px)
+  body:before,
+  body:after
+    width: 38rem
+    height: 115vh
+    padding: 3rem
+    opacity: .56
+
+  body:before
+    left: -33rem
+
+  body:after
+    right: -33.5rem
+
+.content
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  min-height: calc(100vh - 5rem)
+  overflow-wrap: break-word
+
+  p
+    hyphens(auto)
+
+  code
+    hyphens(manual)
+
+  a
+    color: $color-text
+    text-decoration: none
+
+    underline(5px, $color-text)
+
+    &:hover
+      background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
+
+  mjx-container
+    max-width: 100%
+    overflow-x: auto
+    overflow-y: hidden
+    padding: .15em 0
+
+  mjx-container[display="true"]
+    margin: 1.4em 0 !important
+
+  a.icon
+    background: none
+
+    &:hover
+      color: $color-link
+
+  h1 a, .h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+    background: none
+    color: inherit
+    text-decoration: none
+
+  h1 a:hover, .h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+    underline(6px, $color-link)
+
+  h6
+    a
+      background: none
+      color: inherit
+      text-decoration: none
+
+  h6
+    a:hover
+      underline(6px, $color-link)
+
+.site-content
+  padding-top: 4.8rem
+  padding-bottom: 4rem
+
+@media (min-width: 540px)
+  .image-wrap
+    flex-direction: row
+    margin-bottom: 2rem
+
+    .image-block
+      flex: 1 0 35%
+      margin-right: 2rem
+
+    p
+      flex: 1 0 65%
+
+.max-width
+  max-width: $page-width
+
+@media (max-width: 480px)
+  // smaller margins at smaller screen widths
+  .px3
+    padding-right: 1rem
+    padding-left: 1rem
+
+  .my4
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+  .py4
+    padding-top: 2.5rem
+    padding-bottom: 2.5rem
+
+  .site-content
+    padding-top: 4.25rem
+    padding-bottom: 2.5rem
+
+@media (min-width: 480px)
+  p
+    text-align: justify
+
+@import "_partial/header"
+@import "_partial/page-heading"
+@import "_partial/post/actions_mobile"
+@import "_partial/index"
+@import "_partial/article"
+@import "_partial/archive"
+@import "_partial/comments"
+@import "_partial/footer"
+@import "_partial/pagination"
+@import "_partial/search"
+@import "_partial/tags"
+@import "_partial/tooltip"
+@import "_partial/categories"
+// Code
+@import "_highlight/" + $highlight
+
+pre
+  overflow-x: auto
+  padding: 10px 15px
+  padding-bottom: 0
+  border: 1px dotted $color-border
+  border-radius: 4px
+  font-size: 13px
+  font-family: $font-family-mono
+  line-height: 22px
+  -webkit-border-radius: 4px
+
+  code
+    display: block
+    padding: 0
+    border: none
+
+code
+  padding: 0 5px
+  border: 1px dotted $color-border
+  border-radius: 2px
+  -webkit-border-radius: 2px
+
+.highlight
+  overflow-x: auto
+  margin: 1rem 0
+  padding: 10px 15px
+  border-radius: 4px
+  background: $color-background-code
+  font-family: $font-family-mono
+  // color: $color-accent-3
+  -webkit-border-radius: 4px
+
+  figcaption
+    margin: -5px 0 5px
+    color: $color-meta-code
+    font-size: .9em
+    transform: scale(1)
+
+    a
+      float: right
+      color: $color-meta-code
+      font-style: italic
+      font-size: .8em
+
+      underline(10px, $color-link)
+
+    a:hover
+      color: lighten($color-meta-code, 20%)
+
+    &:before, content: ""
+      display: table
+
+    &:after
+      clear: both
+
+  &:hover
+    .btn-copy
+      opacity: 1
+
+  .btn-copy
+    font-size: 1.2rem
+    position: absolute
+    right: 20px
+    opacity: 0
+    transition: opacity 0.2s ease-in
+    &:hover
+      color: $color-accent-1
+
+  pre
+    margin: 0
+    padding: 0
+    border: none
+    background: none
+
+  table
+    width: auto
+
+  td.gutter
+    text-align: right
+    opacity: .2
+
+  .line
+    height: 22px
+
+@media (prefers-reduced-motion: reduce)
+  body:before,
+  body:after
+    animation: none
+
+@media print
+  body:before,
+  body:after
+    display: none

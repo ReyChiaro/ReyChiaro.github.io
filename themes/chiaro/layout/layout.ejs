@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
+<%- partial('_partial/head') %>
+<body class="max-width mx-auto px3 <%- theme.direction -%>">
+    <%- partial('_partial/header') %>
+    <div class="content index site-content <%= is_home() ? 'h-card' : '' %>">
+        <% var usesDocumentTitle = is_post() || page.layout === 'note' || page.layout === 'project'; %>
+        <% if (!usesDocumentTitle) { %>
+          <%- partial('_partial/page_heading') %>
+        <% } %>
+        <%- body %>
+        <% if (is_post()) { %>
+          <%- partial('_partial/post/actions_mobile') %>
+        <% } %>
+        <%- partial('_partial/footer') %>
+    </div>
+    <%- partial('_partial/styles') %>
+    <%- partial('_partial/scripts') %>
+</body>
+</html>

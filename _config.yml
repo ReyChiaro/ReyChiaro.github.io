@@ -101,7 +101,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
+theme: chiaro
 
 mathjax:
   tags: ams # or 'ams' or 'all'

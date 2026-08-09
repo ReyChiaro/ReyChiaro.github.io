@@ -1,0 +1,30 @@
+.page-heading
+  position: relative
+  margin: 0 0 2.35rem
+  text-align: left
+
+  &:after
+    display: block
+    width: 3.5rem
+    height: 2px
+    margin-top: .75rem
+    border-radius: 2px
+    background: linear-gradient(90deg, rgba(154, 107, 196, .72), rgba(220, 137, 182, .42), rgba(255, 255, 255, 0))
+    content: ""
+
+  .page-heading__title
+    margin: 0
+    color: $color-accent-1
+    text-align: left
+    text-transform: none
+    letter-spacing: .025em
+    font-size: 1.65rem
+    font-weight: 700
+    line-height: 1.25
+
+@media (max-width: 480px)
+  .page-heading
+    margin-bottom: 1.8rem
+
+    .page-heading__title
+      font-size: 1.45rem

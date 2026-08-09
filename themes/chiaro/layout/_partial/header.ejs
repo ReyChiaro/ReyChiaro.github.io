@@ -1,0 +1,37 @@
+<header id="header" class="site-header nav-collapsed">
+  <div class="site-header__inner">
+    <button id="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Show navigation" title="Show navigation">
+      <% if (theme.logo && theme.logo.enabled) { %>
+        <% if (theme.gravatar && (theme.gravatar.email || theme.gravatar.hash) && theme.logo.gravatar) { %>
+          <% if (theme.gravatar.email) { %>
+            <img id="logo" alt="" class="u-logo"
+              srcset="<%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width %>, <%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width*1.5 %> 1.5x, <%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width*2 %> 2x"
+              src="<%- gravatar(theme.gravatar.email) %>" />
+          <% } else { %>
+            <img id="logo" alt="" class="u-logo"
+              srcset="https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width %>, https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width*1.5 %> 1.5x, https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width*2 %> 2x"
+              src="https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>" />
+          <% } %>
+        <% } else { %>
+          <img id="logo" alt="" class="u-logo" src="<%- url_for(theme.logo.url) %>" />
+        <% } %>
+      <% } else { %>
+        <span class="site-avatar-fallback" aria-hidden="true"><%= config.title ? config.title.charAt(0) : 'C' %></span>
+      <% } %>
+    </button>
+
+    <div id="site-nav-panel" class="site-header__panel" aria-hidden="true" inert>
+      <a class="site-brand u-url u-uid" href="<%- url_for("/") %>">
+        <span id="title" class="p-name"><%= config.title %></span>
+      </a>
+      <nav id="nav" aria-label="Primary navigation">
+        <ul id="site-nav-list">
+          <% var navigation = site.data.navigation || Object.keys(theme.nav || {}).map(function(key) { return { key: key, label: __('nav.' + key).replace('nav.', ''), url: theme.nav[key] }; }); %>
+          <% navigation.forEach(function(item) { %><!--
+         --><li><a href="<%- url_for(item.url) %>"><%= item.label || __('nav.' + item.key).replace('nav.', '') %></a></li><!--
+       --><% }); %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
